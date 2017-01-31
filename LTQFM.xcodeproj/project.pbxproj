@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A9F404C31BF7CC1E3680E3D /* libPods-LTQFM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E3E3886213C0E7790DB4DC /* libPods-LTQFM.a */; };
 		7341C8C61E4094B80023A1A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7341C8C51E4094B80023A1A6 /* main.m */; };
 		7341C8C91E4094B80023A1A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7341C8C81E4094B80023A1A6 /* AppDelegate.m */; };
 		7341C8CC1E4094B80023A1A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7341C8CB1E4094B80023A1A6 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BF32C5F512CBBA4F5378E60 /* Pods-LTQFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTQFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTQFM/Pods-LTQFM.debug.xcconfig"; sourceTree = "<group>"; };
+		42E3E3886213C0E7790DB4DC /* libPods-LTQFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LTQFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7341C8C11E4094B80023A1A6 /* LTQFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTQFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7341C8C51E4094B80023A1A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7341C8C71E4094B80023A1A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		7341C8E51E4094B80023A1A6 /* LTQFMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTQFMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7341C8E91E4094B80023A1A6 /* LTQFMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTQFMUITests.m; sourceTree = "<group>"; };
 		7341C8EB1E4094B80023A1A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B0222294DC4AA4A3E7F3FE9 /* Pods-LTQFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTQFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTQFM/Pods-LTQFM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9F404C31BF7CC1E3680E3D /* libPods-LTQFM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				7341C8DD1E4094B80023A1A6 /* LTQFMTests */,
 				7341C8E81E4094B80023A1A6 /* LTQFMUITests */,
 				7341C8C21E4094B80023A1A6 /* Products */,
+				ACEF06AA2A0168557172AE20 /* Pods */,
+				B8508E15B1F520AB180DA150 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,23 @@
 			path = LTQFMUITests;
 			sourceTree = "<group>";
 		};
+		ACEF06AA2A0168557172AE20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BF32C5F512CBBA4F5378E60 /* Pods-LTQFM.debug.xcconfig */,
+				7B0222294DC4AA4A3E7F3FE9 /* Pods-LTQFM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B8508E15B1F520AB180DA150 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42E3E3886213C0E7790DB4DC /* libPods-LTQFM.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7341C8EE1E4094B80023A1A6 /* Build configuration list for PBXNativeTarget "LTQFM" */;
 			buildPhases = (
+				63F73D01724334A6235D6DD8 /* [CP] Check Pods Manifest.lock */,
 				7341C8BD1E4094B80023A1A6 /* Sources */,
 				7341C8BE1E4094B80023A1A6 /* Frameworks */,
 				7341C8BF1E4094B80023A1A6 /* Resources */,
+				712901261675CC390EF6127A /* [CP] Embed Pods Frameworks */,
+				3E8273A662C66CF1639C8A2D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +297,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E8273A662C66CF1639C8A2D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTQFM/Pods-LTQFM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63F73D01724334A6235D6DD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		712901261675CC390EF6127A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTQFM/Pods-LTQFM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7341C8BD1E4094B80023A1A6 /* Sources */ = {
@@ -423,6 +498,7 @@
 		};
 		7341C8EF1E4094B80023A1A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BF32C5F512CBBA4F5378E60 /* Pods-LTQFM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QX2B97FPNV;
@@ -435,6 +511,7 @@
 		};
 		7341C8F01E4094B80023A1A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B0222294DC4AA4A3E7F3FE9 /* Pods-LTQFM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QX2B97FPNV;
